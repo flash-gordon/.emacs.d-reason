@@ -17,12 +17,12 @@
     ;;merlin
     popwin))
 
-(defun reason/post-init-company ()
-  (when (configuration-layer/package-usedp 'merlin)
-    (spacemacs|add-company-backends
-      :backends merlin-company-backend
-      :modes reason-mode))
-  )
+;;(defun reason/post-init-company ()
+;;  (when (configuration-layer/package-usedp 'merlin)
+;;    (spacemacs|add-company-backends
+;;      :backends merlin-company-backend
+;;      :modes reason-mode))
+;;  )
 
 (defun reason/init-reason-mode ()
   (use-package reason-mode
